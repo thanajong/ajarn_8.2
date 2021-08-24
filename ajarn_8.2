@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+    float a,b,c,lowest;
+    printf("  THIS IS A COMPARE TOOL FOR LOWEST NUMBER.  \n"); 
+	printf("\n");
+	printf("Enter 3 numbers : ");
+    scanf("%f %f %f", &a,&b,&c);
+    
+    if(a<=b)
+    {
+    	lowest = a;
+	}
+	else if (a>b)
+	{
+		lowest = b;
+	}
+
+	if(lowest<=c)
+	{
+		printf("Your lowest number is : %f",lowest);
+	}
+	else if(lowest>c)
+	{
+		printf("Your lowest number is : %f",c);
+	}
+	return 0;
+}
